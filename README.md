@@ -1,7 +1,7 @@
 # Spring Boot with GraphQL Query Example
 
 ## Book Store
-- `/rest/books` is the REST resource which can fetch Books information
+- `/v1/books` is the REST resource which can fetch Books information
 - DataFetchers are Interfaces for RuntimeWiring of GraphQL with JpaRepository
 
 ## Sample GraphQL Scalar Queries
@@ -20,7 +20,7 @@
 - Usage for `book`
 ```
   {
-   book(id: "123") {
+   book(id: "1402728131") {
      title
      authors
      publisher
@@ -33,7 +33,7 @@
      title
      authors
    }
-   book(id: "124") {
+   book(id: "1402728131") {
      title
      authors
      publisher
